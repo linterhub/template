@@ -1,0 +1,23 @@
+{
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "spellright.language": [
+        "en"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext",
+        "properties"
+    ],
+    "spellright.ignoreFiles": [
+        "**/.spellignore",
+        ".vscode/**/**"
+    ],
+    "spellright.parserByClass": {
+        "properties": {
+            "parser": "code"
+        }
+    }
+}
