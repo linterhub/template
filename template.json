@@ -1,3 +1,33 @@
 {
-    "name": "spell"
+    "name": "github",
+    "description": "{{ description }}",
+    "author": "{{ author }}",
+    "year": "{{ year }}",
+    "github": {
+        "issue": "{{ github.issue }}",
+        "pr": "{{ github.pr }}",
+        "support": "./.github/SUPPORT.md",
+        "conduct": "./.github/CODE_OF_CONDUCT.md",
+        "contributing": "./.github/CONTRIBUTING.md",
+        "license": "./LICENSE.md"
+    },
+    "contact": {
+        "collaborators": "{{ contact.collaborators }}",
+        "maintainers": "{{ contact.maintainers }}",
+        "support": "{{ contact.support }}",
+        "conduct": "{{ contact.conduct }}"
+    },
+    "parse": [
+        ".github/CONTRIBUTING.md",
+        ".github/PULL_REQUEST_TEMPLATE.md",
+        ".github/SUPPORT.md",
+        "LICENSE.md",
+        "tpl/README.github.md"
+    ],
+    "move": [
+        { "tpl/README.github.md": "README.md" }
+    ],
+    "discard": [
+        "README.md"
+    ]
 }
